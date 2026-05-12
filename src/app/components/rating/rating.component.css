@@ -1,0 +1,30 @@
+i {
+  padding-right: 0.1rem;
+  font-size: 2em;
+}
+.filled {
+  color: #FFD700;
+}
+.low {
+  color: var(--primary);
+}
+.filled.low {
+  color: var(--primary);;
+}
+
+@media(max-width: 1200px){
+  i{
+    font-size: 1.5em;
+  }
+}
+
+@media(max-width: 1000px) {
+  i{
+    font-size: 1em;
+  }
+}
+@media(max-width: 767px) {
+  i{
+    font-size: 2em;
+  }
+}

@@ -1,0 +1,20 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none !important;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+:root {
+  --primary: #D61A4C;
+  --secundary: #4353ff;
+  --dark: #141313;
+  --white: #ffff;
+}
+
+.margin-center{
+  margin: 0 auto;
+}
+

@@ -1,0 +1,18 @@
+<div class="row mt-5">
+  <div class="col-sm-12 col-md-4">
+    <img src="https://images5.alphacoders.com/111/thumb-1920-1111276.jpg" width="100%">
+    <app-rating [rating]="data.rating" [choose]="true"></app-rating>
+    <div class="row mb-2" style="font-size: 0.6em">
+      <div class="col-6 col-sm-6">
+        <app-card [title]="'Breaking bad'" [px]="'p-0'" [body]="''"></app-card>
+      </div>
+      <div class="col-6 col-sm-6">
+        <app-card [title]="'Breaking bad'" [px]="'p-0'" [body]="''"></app-card>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-12 col-md-8">
+    <app-card [title]="data.title" [body]="data.description"></app-card>
+    <app-card [title]="data.episodes + ' Episodios'" class="px-2" [body]="data.seasons + ' Temporadas'"></app-card>
+  </div>
+</div>
