@@ -2,8 +2,7 @@ import axios from "axios";
 
 export const api = () =>{
  return axios.create({
-    baseURL: "https://sua-api.com",
-    timeout: 10000,
+    baseURL: "https://api-cinesuggest.evitorsilva.site/",
     headers: {
       "Content-Type": "application/json",
     },

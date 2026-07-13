@@ -1,12 +1,22 @@
-<form class="mt-3 p-4 bg-dark text-white">
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </div>
-  <button type="submit" class="btn" style="background: var(--primary)">Submit</button>
-</form>
+<div class="container-sign d-flex align-items-center justify-content-center min-vh-100 bg-imdb text-white p-3">
+  <form class="p-4 bg-dark text-white rounded shadow" style="width: 100%; max-width: 400px;" [formGroup]="singupForm" (ngSubmit)="onSubmit()" )>
+    <h2 class="h4 mb-4 text-center fw-bold text-warning">Sign In</h2>
+
+    <div class="mb-3">
+      <label for="loginName" class="form-label">Name</label>
+      <input type="text" class="form-control" id="loginName"  formControlName="name" aria-describedby="emailHelp" placeholder="Enter name" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="loginEmail" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="loginEmail"  formControlName="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+    </div>
+
+    <div class="mb-4">
+      <label for="loginPassword" class="form-label">Password</label>
+      <input type="password" class="form-control" id="loginPassword"  formControlName="password" placeholder="Password" required>
+    </div>
+
+    <button type="submit" class="btn w-100 fw-bold" [disabled]="!singupForm.valid" style="background-color: var(--primary); color: #000;">Submit</button>
+  </form>
+</div>

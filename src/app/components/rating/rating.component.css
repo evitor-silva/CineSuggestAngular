@@ -11,7 +11,9 @@ i {
 .filled.low {
   color: var(--primary);;
 }
-
+.p-3{
+  padding: 0 !important;
+}
 @media(max-width: 1200px){
   i{
     font-size: 1.5em;

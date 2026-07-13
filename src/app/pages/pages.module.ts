@@ -1,25 +1,33 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import {HomeComponent} from "./home/home.component";
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 import {NotFoundComponent} from "./not-found/not-found.component";
 import {ComponentsModule} from "../components/components.module";
-import { SignupComponent } from './signup/signup.component';
+import {SignupComponent} from './signup/signup.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {TitleComponent} from './title/title.component';
+import {HomeComponent} from "./home/home.component";
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
   declarations: [
-    HomeComponent,
     NotFoundComponent,
-    SignupComponent
+    SignupComponent,
+    HomeComponent,
+    TitleComponent,
+    LoginComponent,
   ],
   imports: [
     CommonModule,
     ComponentsModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  exports:[
-    HomeComponent,
+  exports: [
     NotFoundComponent,
-    SignupComponent
+    SignupComponent,
+    HomeComponent,
   ],
 })
-export class PagesModule { }
+export class PagesModule {
+}

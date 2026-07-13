@@ -1,6 +1,34 @@
-<div class="card bg-dark text-white" [ngClass]="px">
-  <h5 class="card-header">{{title}}</h5>
-  <div class="card-body" *ngIf="body" >
-    {{body}}
+<div class="card imdb-style-card h-100 bg-dark text-white border-0 shadow-sm" [ngClass]="px">
+
+  <div class="position-relative poster-container" *ngIf="imageUrl">
+    <img [src]="imageUrl" [alt]="title" class="card-img-top poster-img">
+    <button class="btn position-absolute top-0 start-0 m-2 watchlist-btn" title="Adicionar à Watchlist">
+      <i class="bi bi-bookmark-plus-fill fs-3 text-secondary-custom"></i>
+    </button>
+  </div>
+
+  <div class="card-body-wrapper p-3 d-flex flex-column flex-grow-1" [class.pt-4]="!imageUrl">
+
+    <div class="d-flex align-items-center mb-2 text-muted small" *ngIf="imageUrl && rating">
+      <i class="bi bi-star-fill text-warning me-1"></i>
+      <span class="text-white fw-bold me-1">{{ rating }}</span>
+    </div>
+
+    <h5 class="card-title fw-bold text-secondary-custom mb-2" [class.text-truncate-2]="imageUrl">
+      {{ title }}
+    </h5>
+
+    <div class="card-text-body flex-grow-1" *ngIf="body">
+      <p class="card-text lh-base text-light-custom" [class.movie-description-truncate]="imageUrl">
+        {{ body }}
+      </p>
+    </div>
+
+    <div class="mt-auto pt-3 actions-wrapper" *ngIf="imageUrl">
+      <button class="btn btn-outline-secondary btn-sm w-100 mb-2 text-white border-secondary-subtle">
+        <i class="bi bi-plus me-1"></i> Watchlist
+      </button>
+    </div>
+
   </div>
 </div>

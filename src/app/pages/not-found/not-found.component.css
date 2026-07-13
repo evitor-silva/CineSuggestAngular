@@ -1,0 +1,55 @@
+.error-container {
+  min-height: calc(100vh - 60px);
+}
+
+.fw-black {
+  font-family: 'Impact', 'Arial Black', sans-serif;
+  font-weight: 900;
+}
+
+.text-warning {
+  color: var(--primary) !important;
+}
+
+.glitch-404 {
+  font-size: clamp(6rem, 15vw, 11rem);
+  line-height: 1;
+  letter-spacing: 4px;
+}
+
+.astronaut-badge {
+  bottom: -15px;
+  white-space: nowrap;
+  background-color: var(--primary) !important;
+}
+
+.max-w-content {
+  max-width: 650px;
+}
+
+.max-w-text {
+  max-width: 460px;
+}
+
+.tracking-tight {
+  letter-spacing: -0.5px;
+}
+
+.tracking-wider {
+  letter-spacing: 1px;
+}
+
+/* Animações e Hovers */
+.hover-bg-dark:hover {
+  background-color: var(--secundary) !important;
+  color: #fff !important;
+}
+.btn-warning{
+  background: var(--bs-secondary) !important;
+}
+
+
+@keyframes backgroundMove {
+  from { background-position: 0 0, 40px 60px, 130px 270px; }
+  to { background-position: 550px 550px, 390px 410px, 380px 820px; }
+}

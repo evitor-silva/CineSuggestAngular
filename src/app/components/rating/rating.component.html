@@ -1,5 +1,5 @@
 
-<ngb-rating [(rate)]="rating" class="p-3" [readonly]="choose"   (rateChange)="onRateChange($event)">
+<ngb-rating [(rate)]="rating" class="p-3" [readonly]="choose" (rateChange)="onRateChange($event)">
   <ng-template let-fill="fill" let-index="index">
     <i class="bi-suit-heart{{ fill === 100 ? '-fill' : '' }}" [class.filled]="fill === 100" [class.low]="index < 7"></i>
   </ng-template>

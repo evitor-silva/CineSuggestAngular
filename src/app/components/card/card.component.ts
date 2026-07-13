@@ -7,8 +7,11 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class CardComponent implements OnInit {
   @Input() title: string = 'Default Title'
-  @Input() body: string = 'This is some text within a card body.';
+  @Input() body: string = '';
   @Input() px: string = "p-4";
+
+  @Input() imageUrl?: string;
+  @Input() rating?: string | number;
   constructor() { }
 
   ngOnInit(): void {
