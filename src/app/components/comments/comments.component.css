@@ -1,0 +1,36 @@
+.underline {
+    display: inline-block;
+    box-shadow: 0 4px 0 var(--primary);
+}
+.bg-primary{
+  background: var(--primary) !important;
+}
+
+.text-area-y{
+  height: 125px;
+}
+
+.btn-submit-inside {
+  position: absolute;
+  right: 20px;
+  bottom: -20px;
+  color: white;
+  border: none;
+  padding: 8px 22px;
+  font-weight: bold;
+  border-radius: 20px !important;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.avaliation-comments{
+  z-index: 100;
+  color: white;
+  padding: 0 !important;
+}
+
+@media(max-width: 392px){
+  .avaliation-comments{
+    font-size: 0.9em;
+  }
+}

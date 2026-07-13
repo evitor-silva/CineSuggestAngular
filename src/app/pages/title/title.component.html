@@ -1,0 +1,28 @@
+<div class="row mt-5">
+  <div class="col-sm-12 col-md-4">
+    <img [src]="data.img" width="100%" style="max-height: 500px">
+    <app-rating [rating]="data.rating" class="m-2" [choose]="true"></app-rating>
+    <div class="row mb-2 px-2" >
+      <div class="col-6 col-sm-6">
+        <app-card [title]="'Breaking bad'" [px]="'p-0'" ></app-card>
+      </div>
+      <div class="col-6 col-sm-6">
+        <app-card [title]="'Breaking bad'" [px]="'p-0'"></app-card>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-12 col-md-8 d-flex flex-column gap-3">
+
+    <app-card [title]="data.title" [body]="data.description"></app-card>
+
+    <app-card
+      [title]="data.episodes > 1 ? data.episodes + ' Episódios' : data.episodes + ' Episódio'"
+      [body]="data.seasons">
+    </app-card>
+
+    <div class="bg-dark text-white rounded  shadow-sm">
+      <app-comments [comments]="data.comments"></app-comments>
+    </div>
+
+  </div>
+</div>

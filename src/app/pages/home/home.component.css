@@ -1,0 +1,50 @@
+.border-warning{
+  border-color: var(--primary) !important;
+}
+
+.imdb-movie-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.imdb-movie-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5) !important;
+}
+
+.poster-container {
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+  background-color: #000;
+}
+.poster-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-truncate-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.movie-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.watchlist-btn {
+  background: transparent;
+  border: none;
+  padding: 0;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+.watchlist-btn:hover {
+  opacity: 1;
+}
+.hover-white:hover {
+  color: #fff !important;
+}
