@@ -21,7 +21,7 @@ export class SignupComponent implements OnInit {
   }
 
   onSubmit() {
-    api().post("/user", this.singupForm.value).then((data) => {
+    api().post("/user/", this.singupForm.value).then((data) => {
       console.log(data)
     }).catch((error) => {
 
