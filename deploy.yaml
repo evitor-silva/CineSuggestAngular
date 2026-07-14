@@ -31,7 +31,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: vitoresbr/angular-cinesuggest
+          image: vitoresbr/angular-cinesuggest:latest
           ports:
             - containerPort: 80
 
